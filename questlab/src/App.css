@@ -1,4 +1,4 @@
-body{
+body {
   box-sizing: border-box;
 }
 .form-field {
@@ -32,25 +32,34 @@ label {
   width: 100%;
   margin-top: 20px;
   padding: 10px 0px;
-  background:black;
+  background: black;
   border-radius: 8px;
 }
-.form-heading{
+.form-heading {
   font-weight: 700;
   font-size: 20px;
 }
-.nav{
-
-  
+.nav {
   display: flex;
   justify-content: space-between;
   padding: 0px 20px;
- 
 }
-.nav-title{
+.nav-title {
   width: 50%;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.home_page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.home_btn{
+  padding: 10px 20px;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 8px;
 }
