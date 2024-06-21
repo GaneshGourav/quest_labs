@@ -1,8 +1,11 @@
+body{
+  box-sizing: border-box;
+}
 .form-field {
   display: flex;
   flex-direction: column;
   text-align: left;
-  gap: 5px;
+  gap: 8px;
 }
 label {
   font: bold;
@@ -15,8 +18,9 @@ label {
   width: 500px;
   padding: 30px;
   color: white;
-  border: 1px solid red;
+  border: 1px solid white;
   border-radius: 8px;
+  margin-top: 10px;
 }
 .input-field {
   padding: 8px;
@@ -24,11 +28,29 @@ label {
   border: 1px solid white;
 }
 .form-button {
-  border: 1px solid red;
+  border: 1px solid white;
   width: 100%;
   margin-top: 20px;
+  padding: 10px 0px;
+  background:black;
+  border-radius: 8px;
 }
 .form-heading{
   font-weight: 700;
   font-size: 20px;
+}
+.nav{
+
+  
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+ 
+}
+.nav-title{
+  width: 50%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
