@@ -5,19 +5,25 @@ export const Navbar = () =>{
 
     return <>
     <nav className="nav">
-        <div >
-            <p>QuestLabs</p>
+        <div className="navs" >
+            <p>braze</p>
+            <a href="#">How it Works</a>
+            <a href="#">Product</a>
+            <a href="#">Solutions</a>
+            <a href="#">Customers</a>
+            <a href="#">Success</a>
+            <a href="#">Partners</a>
+            <a href="#">Resources</a>
+            <a href="#">Company</a>
         </div>
         <div className="nav-title">
-            <a href="#">Product</a>
-            <a href="#">Solution</a>
-            <a href="#">Customers</a>
+        
             <a href="#">Signup</a>
             <a href="#">Login</a>
         </div>
      
     </nav>
-    <hr />
+ 
     
     
     </>

@@ -1,38 +1,37 @@
 body {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 .form-field {
   display: flex;
   flex-direction: column;
+  padding-left: 20px;
   text-align: left;
   gap: 8px;
+  
 }
 label {
   font: bold;
 }
-.main-Container {
-  position: fixed;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  width: 500px;
-  padding: 30px;
-  color: white;
-  border: 1px solid white;
-  border-radius: 8px;
-  margin-top: 10px;
-}
+
 .input-field {
   padding: 8px;
+  /* margin: auto; */
+  width: 80%;
   border-radius: 8px;
-  border: 1px solid white;
+  color: black;
+  background-color: white;
+  border: 1px solid rgb(46, 41, 41);
 }
 .form-button {
-  border: 1px solid white;
-  width: 100%;
+  border: none;
+  background-color: white;
+  font-size: 20px;
+  font-weight: 600;
   margin-top: 20px;
-  padding: 10px 0px;
-  background: black;
+  margin-left: 20px;
+  color: #875beb;
   border-radius: 8px;
 }
 .form-heading {
@@ -40,26 +39,190 @@ label {
   font-size: 20px;
 }
 .nav {
+  width: 80%;
+  border: 1px solid white;
   display: flex;
   justify-content: space-between;
+  margin: auto;
+  border-radius: 10px;
+  background:white;
+  color: black;
   padding: 0px 20px;
 }
 .nav-title {
-  width: 50%;
+  width: 10%;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .home_page {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
 }
-.home_btn{
+/* .home_btn{
   padding: 10px 20px;
   background-color: black;
   border: 1px solid white;
   border-radius: 8px;
+} */
+.form-stage-indicator {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
 }
+
+.form-stage-indicator span {
+  padding: 0 10px;
+}
+
+.active-stage {
+  font-weight:500;
+  color: black;
+  
+  
+}
+.navs{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+.data{
+  border: 1px solid blue;
+  
+}
+.home{
+  width: 40%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 40px;
+}
+.home_text{
+  font-size: 60px;
+}
+.home_btn{
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.primary-btn{
+  width: 150px;
+  padding: 20px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+  background-color: white;
+  color: #8a68b4;
+}
+.primary-btn2{
+border: none;
+background-color: #814488;
+}
+.company_logos{
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+}
+.company_logo_Container{
+ 
+  background-color: white;
+  height: 200px;
+  border-radius: 20px;
+  color: black;
+}
+.comapny_logo_text{
+  text-align: center;
+  color: #778091;
+  font-size: 20px;
+  font-weight: 600;
+}
+.connect_btn{
+  padding: 20px 30px;
+  border: none;
+  background-color: #1100ff;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* App.css */
+.home-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.form-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 40%;
+  color: black;
+  background: white;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.form-container-enter {
+  animation: slideIn 0.5s forwards;
+}
+
+.form-container-exit {
+  animation: slideOut 0.5s forwards;
+}
+
+.form-button.close-button {
+  
+  margin-top: 20px;
+  color: black;
+  color: white;
+}
+.form-heading{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+  align-items: center;
+  cursor: pointer;
+}
+.form_label{
+  text-align: left;
+  /* margin: auto; */
+}
+
