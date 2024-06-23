@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../App.css";
+import { IoIosPlay } from "react-icons/io";
 import { FormData } from "./Form";
 
 export const Home = () => {
@@ -17,27 +18,47 @@ export const Home = () => {
     <div className="home-container">
       <div className="home_page">
         <div className="home">
-          <h1 className="home_text">There's never been a better time to be a better marketer</h1>
-          <p>Data is flowing and channels are growing. Customers are demanding the world, while AI is already transforming it. Manage it all with the <span>Customer engagement platform</span></p>
+          <h1 className="home_text">
+            There's never been a better time to be a better marketer
+          </h1>
+          <p>
+            Data is flowing and channels are growing. Customers are demanding
+            the world, while AI is already transforming it. Manage it all with
+            the <span>Customer engagement platform</span>
+          </p>
           <div className="home_btn">
             <button className="primary-btn">Get Started</button>
-            <button className="primary-btn2">Watch Video</button>
+
+            <button className="primary-btn2">
+              Watch Video <IoIosPlay />
+            </button>
           </div>
         </div>
         <div>
-          <img src="https://media.istockphoto.com/id/1927881398/photo/group-of-business-persons-talking-in-the-office.webp?b=1&s=170667a&w=0&k=20&c=XgCcUuvLxis9v5Tx4imANNyDgmpjFfyVeF2w1kaupPY=" alt="" />
+          <img
+            src="https://media.istockphoto.com/id/1927881398/photo/group-of-business-persons-talking-in-the-office.webp?b=1&s=170667a&w=0&k=20&c=XgCcUuvLxis9v5Tx4imANNyDgmpjFfyVeF2w1kaupPY="
+            alt=""
+            className="home-image"
+          />
         </div>
       </div>
 
       <div className="company_logo_Container">
-        <p className="company_logo_text">Made to scale company with all size</p>
+        <p className="company_logo_text">
+          MADE TO SCALE WITH COMPANIES OF ALL SIZES
+        </p>
+
         <div className="company_logos">
           <p>elf</p>
           <p>Intuit</p>
           <p>Going</p>
           <p>Gyme</p>
           <p>Chimpass</p>
-          <button className="connect_btn" onClick={handleConnectClick}>Connect With Sales</button>
+          <p>elf</p>
+          <p>Intuit</p>
+          <button className="connect_btn" onClick={handleConnectClick}>
+            Connect With Sales
+          </button>
         </div>
       </div>
 
