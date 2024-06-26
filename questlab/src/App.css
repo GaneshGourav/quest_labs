@@ -16,7 +16,7 @@ label {
 
 .input-field {
   padding: 8px;
-  /* margin: auto; */
+
   width: 80%;
   border-radius: 8px;
   color: black;
@@ -60,6 +60,8 @@ label {
   border: 1px solid white;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 80px;
   margin: auto;
   border-radius: 10px;
   background: white;
@@ -67,7 +69,7 @@ label {
   padding: 0px 20px;
 }
 .nav-title {
-  width: 10%;
+  width: 25%;
 
   display: flex;
   justify-content: space-between;
@@ -78,12 +80,7 @@ label {
   justify-content: space-around;
   align-items: center;
 }
-/* .home_btn{
-  padding: 10px 20px;
-  background-color: black;
-  border: 1px solid white;
-  border-radius: 8px;
-} */
+
 .form-stage-indicator {
   text-align: left;
   margin-bottom: 20px;
@@ -108,12 +105,12 @@ label {
   border: 1px solid blue;
 }
 .home {
-  width: 40%;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 40px;
+  margin-left: 150px;
 }
 .home_text {
   font-size: 60px;
@@ -129,6 +126,7 @@ label {
   font-size: 18px;
   padding: 20px;
   color: grey;
+  
 }
 .primary-btn {
   width: 150px;
@@ -141,7 +139,7 @@ label {
 }
 .primary-btn2 {
   border: none;
-  background-color: #814488;
+  background-color: transparent;
   display: flex;
   align-items: center;
   gap: 4px;
@@ -189,10 +187,12 @@ label {
   }
 }
 
-/* App.css */
 .home-container {
   position: relative;
   overflow: hidden;
+}
+.home {
+  width: 100%;
 }
 
 .form-container {
@@ -265,8 +265,12 @@ label {
   color: #875beb;
 }
 .company-name {
-  font-family: Cursive;
-  font-weight: 800;
+  
+  
+  font-family: "Cedarville Cursive";
+  font-weight: bold;
+  font-size: 1.8rem;
+  font-style: normal;
 }
 .nav-content {
   color: black;
@@ -274,4 +278,41 @@ label {
 }
 .home-image {
   border-radius: 20px;
+  width: 70%;
+  height: auto;
+  background-color: transparent;
+
+  margin-left: 40px;
+}
+.home-image > img {
+  width: 50%;
+  object-fit: cover;
+}
+.home_page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.getStarted-btn {
+  padding: 10px 30px;
+  background-color: #1100ff;
+  border-radius: 10px;
+}
+.selectbtn {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 10px;
+  background-color: rgb(230, 224, 224);
+}
+.selectbtn > select {
+  background-color: transparent;
+  outline: none;
+  color: black;
+  border: none;
+}
+.selectbtn > select > option {
+  background-color: transparent;
 }

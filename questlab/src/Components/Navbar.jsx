@@ -1,11 +1,12 @@
 import React from "react";
+import { TbWorld } from "react-icons/tb";
 
 export const Navbar = () => {
   return (
     <>
       <nav className="nav">
         <div className="navs">
-          <p className="company-name">braze</p>
+          <span className="company-name">braze</span>
           <a href="#" className="nav-content">
             How it Works
           </a>
@@ -32,11 +33,18 @@ export const Navbar = () => {
           </a>
         </div>
         <div className="nav-title">
-          <a href="#" className="nav-content">
-            Signup
-          </a>
+          <div className="selectbtn">
+            <div><TbWorld /></div>
+            <select name="" id="">
+              <option value="US">US</option>
+              <option value="India">India</option>
+            </select>
+          </div>
           <a href="#" className="nav-content">
             Login
+          </a>
+          <a href="#" className="nav-content">
+           <button className="getStarted-btn">Get started</button>
           </a>
         </div>
       </nav>

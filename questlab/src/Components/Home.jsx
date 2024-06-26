@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../App.css";
 import { IoIosPlay } from "react-icons/io";
 import { FormData } from "./Form";
+import image from "../assets/businessImg.jpg"
 
 export const Home = () => {
   const [showForm, setShowForm] = useState(false);
@@ -24,7 +25,7 @@ export const Home = () => {
           <p>
             Data is flowing and channels are growing. Customers are demanding
             the world, while AI is already transforming it. Manage it all with
-            the <span>Customer engagement platform</span>
+            the <b>Customer engagement platform</b>
           </p>
           <div className="home_btn">
             <button className="primary-btn">Get Started</button>
@@ -34,11 +35,11 @@ export const Home = () => {
             </button>
           </div>
         </div>
-        <div>
+        <div className="">
           <img
-            src="https://media.istockphoto.com/id/1927881398/photo/group-of-business-persons-talking-in-the-office.webp?b=1&s=170667a&w=0&k=20&c=XgCcUuvLxis9v5Tx4imANNyDgmpjFfyVeF2w1kaupPY="
+            src="https://quest-labs-liart.vercel.app/static/media/hp-player-crop.c4e8fe80aecce6fe3d14.webp"
             alt=""
-            className="home-image"
+            className="home-image  "
           />
         </div>
       </div>
@@ -49,6 +50,7 @@ export const Home = () => {
         </p>
 
         <div className="company_logos">
+          
           <p>elf</p>
           <p>Intuit</p>
           <p>Going</p>
@@ -56,11 +58,17 @@ export const Home = () => {
           <p>Chimpass</p>
           <p>elf</p>
           <p>Intuit</p>
+         
           <button className="connect_btn" onClick={handleConnectClick}>
             Connect With Sales
           </button>
-        </div>
+          </div>
+          <div>
+        
+          </div>
+          
       </div>
+      
 
       {showForm && <FormData onClose={handleCloseForm} />}
     </div>

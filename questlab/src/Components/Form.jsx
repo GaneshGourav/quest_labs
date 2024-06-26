@@ -21,6 +21,7 @@ export const FormData = ({ onClose }) => {
   const [animateExit, setAnimateExit] = useState(false);
   const [loading, setLoading] = useState(false);
   const [formSubmitLoader, setFormsubmitloader] = useState(false);
+  const [isNextEnabled, setIsNextEnabled] = useState(true);
 
   function getData() {
     setLoading(true);
@@ -55,6 +56,9 @@ export const FormData = ({ onClose }) => {
   useEffect(() => {
     getData();
   }, []);
+  useEffect(() => {
+    validateFields(stage === 1 ? stage1Fields : stage2Fields);
+  }, [inputValues, stage]);
 
   const handleChange = (e, title) => {
     setInputValues({
@@ -95,7 +99,7 @@ export const FormData = ({ onClose }) => {
       .then((response) => response.json())
       .then((response) => {
         console.log(response);
-        alert(response.data[0].message);
+        alert("Form Submitted successfully");
         setFormsubmitloader(false);
         setInputValues("");
       })
@@ -129,6 +133,12 @@ export const FormData = ({ onClose }) => {
     "Job Title",
   ];
   const stage2Fields = ["Industry", "Number of Employees", "Country"];
+  const validateFields = (fields) => {
+    const isValid = fields.every(
+      (field) => inputValues[field] && inputValues[field].trim() !== ""
+    );
+    setIsNextEnabled(isValid);
+  };
 
   const renderFields = (fields) => {
     return fields.map((fieldTitle) => {
@@ -197,6 +207,7 @@ export const FormData = ({ onClose }) => {
                     type="button"
                     onClick={handleNext}
                     className="form-button"
+                    disabled={!isNextEnabled}
                   >
                     Next <FaArrowRight />
                   </button>
