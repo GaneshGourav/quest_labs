@@ -176,7 +176,7 @@ export const FormData = ({ onClose }) => {
       <div
         className={`form-container ${
           animateExit ? "form-container-exit" : "form-container-enter"
-        }`}
+        } w-full  md:w-[40%]`}
       >
         <div className="form-heading">
           <p className="form-heading">Connect With Sales</p>

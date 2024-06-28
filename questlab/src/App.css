@@ -56,7 +56,7 @@ label {
   font-size: 20px;
 }
 .nav {
-  width: 80%;
+  /* width: 90%; */
   border: 1px solid white;
   display: flex;
   justify-content: space-between;
@@ -69,7 +69,7 @@ label {
   padding: 0px 20px;
 }
 .nav-title {
-  width: 25%;
+  
 
   display: flex;
   justify-content: space-between;
@@ -99,7 +99,7 @@ label {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 60%;
+  width: 65%;
 }
 .data {
   border: 1px solid blue;
@@ -110,7 +110,7 @@ label {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 150px;
+  
 }
 .home_text {
   font-size: 60px;
@@ -288,12 +288,7 @@ label {
   width: 50%;
   object-fit: cover;
 }
-.home_page {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
+
 .getStarted-btn {
   padding: 10px 30px;
   background-color: #1100ff;

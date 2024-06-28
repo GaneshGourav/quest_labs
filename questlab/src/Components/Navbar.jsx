@@ -4,9 +4,10 @@ import { TbWorld } from "react-icons/tb";
 export const Navbar = () => {
   return (
     <>
-      <nav className="nav">
+      <nav className="nav  md:w-[90%] w-full">
         <div className="navs">
-          <span className="company-name">braze</span>
+          <span className="company-name mr-2">braze</span>
+          <div className="  w-[100%] lg:flex md:hidden justify-between  hidden">
           <a href="#" className="nav-content">
             How it Works
           </a>
@@ -31,16 +32,17 @@ export const Navbar = () => {
           <a href="#" className="nav-content">
             Company
           </a>
+          </div>
         </div>
-        <div className="nav-title">
-          <div className="selectbtn">
+        <div className="nav-title   lg:w-[30%] w-[100%] md:w-full ">
+          <div className="selectbtn hidden md:flex  ">
             <div><TbWorld /></div>
-            <select name="" id="">
+            <select name="" id="" >
               <option value="US">US</option>
               <option value="India">India</option>
             </select>
           </div>
-          <a href="#" className="nav-content">
+          <a href="#" className="nav-content  md:block">
             Login
           </a>
           <a href="#" className="nav-content">
